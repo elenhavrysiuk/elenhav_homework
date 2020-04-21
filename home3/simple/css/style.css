@@ -1,0 +1,30 @@
+body { text-align: center}
+.name {
+    background-color:#A52A2A;
+        font-family:monospace ;
+    margin-top: 40px; 
+    text-align: center;
+    color: white;
+}
+.img { text-align: center;
+}
+p { font-size: 18px;
+}
+.Part2 {
+    margin: 0;
+    padding: 0px;}
+    li {
+    display: inline;
+    margin-right: 5px;
+    border-color: black;
+    outline-style: dashed;
+    padding: 0px;
+   }
+
+footer {
+    background-color:#080609;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+
+}
