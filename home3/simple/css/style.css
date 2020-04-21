@@ -20,7 +20,9 @@ p { font-size: 18px;
     outline-style: dashed;
     padding: 0px;
    }
-
+   .word {
+       color: blue;
+   }
 footer {
     background-color:#080609;
     color: white;
