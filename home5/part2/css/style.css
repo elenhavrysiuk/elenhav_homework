@@ -1,0 +1,53 @@
+* {
+    transition: all .1s ease-in;
+}
+body {
+    background-color: #3B3F45;
+    border: 30px solid white;
+    font-family: 'Trebuchet MS',Trebuchet, Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+header {
+    color: #EB7E7F;
+    background: #4A4F56;
+    text-align: center;
+    margin-top: -20px;
+    padding-bottom: 10px;
+}
+
+.list ul {
+    display: block;
+    color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin: 25px 120px 15px 120px;
+    background: #88839E;
+    font-size: 20px;
+}
+span {
+    font-size: 15px;
+    opacity: 0.4;
+}
+li:nth-child(3) {
+    background-color: rgb(85, 78, 117);
+}  
+label:hover {
+    text-decoration: line-through;
+    }
+input[type="checkbox"]:checked+span {  
+    color: #fff;
+    background: rgb(51, 46, 73);
+    text-decoration: line-through;
+      }
+
+footer {
+    color: #EB7E7F;
+    background:#4d4c55;
+    text-align: center;
+    margin: 55px 120px 10px 120px;
+    height: 45px;
+}
