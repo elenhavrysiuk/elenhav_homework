@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all .1s ease-in;
+    font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif; 
+    color: white;
+}
+body {
+   background-color: rgb(90, 117, 190); 
+   margin: 0 auto;
+  margin-left: 70px;
+}
+
+.first_line .second_line{
+    padding: 0;
+    margin: 0 auto;
+}
+.first_line ul, .second_line ul,.third_line ul,.line_fourth ul{
+    list-style: none;  
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.first_line li,.second_line li,.third_line li,.line_fourth li {
+display: inline-block;
+border: 2px solid white; 
+padding: 0;
+margin: 0 0  0 auto;
+text-align: center;
+font-size: 16px;
+}
+
+.line_1 {
+    width: 40%;
+    padding: 0;
+}
+.line_2 {
+    width: 20%;
+    padding: 0;
+}
+
+.line_3 {
+    width: 20%;
+    padding: 0;
+}
+.line_1:hover {
+    background-color:rgb(80, 80, 245);
+     opacity: .5;
+}
+
+.line_2:hover {
+    background-color:rgb(33, 139, 165);
+     opacity: .5;
+}
+.line_3:hover {
+    background-color:rgb(96, 49, 110);
+     opacity: .5;
+}
+
+.line_2_1 {
+    width: 20%;
+    padding: 0;
+}
+.line_2_2 {
+    width: 20%;
+    padding: 0;
+}
+
+.line_2_3 {
+    width: 20%;
+    padding: 0;
+}
+.line_2_4 {
+    width: 20%;
+    padding: 0;
+}
+
+.line_2_1:hover {
+    background-color:red;
+     opacity: .5;
+}
+
+.line_2_2:hover {
+    background-color:rgba(230, 144, 33, 0.87);
+     opacity: .5;
+}
+
+.line_2_3:hover {
+    background-color:rgb(236, 222, 25);
+     opacity: .5;
+}
+
+.line_2_4:hover {
+    background-color:rgb(108, 155, 124);
+     opacity: .5;
+    }
+
+.line_3_1 {
+    width: 20%;
+    padding: 0;
+}
+
+.line_3_2 {
+    width: 40%;
+    padding: 0;
+}
+
+.line_3_3 {
+    width: 20%;
+    padding: 0;
+}
+
+.line_3_1:hover {
+    background-color:rgb(65, 139, 139);
+     opacity: 0.5;
+}
+
+.line_3_2:hover {
+    background-color:rgb(161, 93, 147);
+     opacity: .5;
+}
+.line_3_3:hover {
+    background-color: rgb(19, 165, 109);
+    opacity: .5;
+}
+
+.line_4 {
+    width: 80%;
+    padding-top: -50px;
+}
+.line_4:hover {
+    background-color:rgb(95, 85, 121);
+     opacity: 0.5;
+    }
+
+footer {
+padding-top: 15px;
+}
+
