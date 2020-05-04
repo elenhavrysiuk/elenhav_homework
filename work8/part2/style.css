@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #1d1d1d;
+    font-size: 22px;
+}
+
+body {
+    width: 1120px;
+    height: 1210px;
+    background-color: white;
+    margin: 0 auto;
+    font-family: Myriard Pro;
+    text-transform: uppercase; 
+}
+
+.box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+ } 
+
+ .one {
+    width: 740px; 
+    height:530px;
+    margin-bottom: 20px;
+}
+
+.two,.three,.four,.five {
+    width: 360px; 
+    height:550px;  
+}
+
+p,h2 {
+    margin-left: 30px;
+}
+
+.one  p  {
+    margin-top: -120px;
+    color: white;
+}
+.me {
+    margin-top: 70px;
+    margin-left: 30px;
+ }
+
+.one  h2 {
+    font-size: 30px;
+    color: #ffffff;
+    text-align: left;
+    margin: 5px 320px 40px 30px;
+}
+
+p {
+    font-size: 13px;
+    font-family: HansKendrick;
+    color: #818181;
+}
+
+h2 {
+    margin: 30px 0 20px 30px; 
+}
+
+a:hover {
+    opacity: 0.6;
+}
