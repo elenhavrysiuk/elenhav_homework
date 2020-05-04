@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+    width: 1200px;
+    height: 600px;
+    background-color: #F4DE84;
+    margin: 0 auto;
+    font-family: lato;
+}
+    
+.box {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    height: 600px;
+    align-items: center;
+ }
+.praise {
+    font-family: Miso;
+    font-size: 70px;
+    color: #02995b;
+    text-align: center;   
+}
+.box > div {
+background-color: white;
+width: 360px;
+margin: 30px;
+line-height: 80px;
+}
+    
+h2 {
+font-family: Miso;
+font-size: 56px;
+color: #333333;
+text-align: center;
+}
+
+h2 + p {
+font-size: 20px;
+text-align: center; 
+margin: 0 120 0 120;
+}
+
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+     
+         
+        
