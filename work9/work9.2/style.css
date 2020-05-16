@@ -1,0 +1,131 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+}
+body {
+  font-family: Georgia;
+  color: #000000;
+  font-size: 27px;
+  width: 1180px;
+  height: 1190px;
+}
+header {
+  position: relative;
+}
+.block1 {
+  position: absolute;
+  margin: 60px 120px 0 190px;
+  width: 870px;
+  height: 190px;
+  background-color: #181818;
+}
+.conteiner1 {
+  padding: 50px 70px 65px;
+}
+.p1 {
+  font-family: ProximaNova;
+  font-size: 15px;
+  font-weight: normal;
+  color: #767676;
+  text-transform: uppercase;
+  letter-spacing: 4.8px;
+}
+.p2 {
+  font-family: PlayfairDisplay;
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 1.96;
+  letter-spacing: normal;
+  color: #fefefe;
+}
+hr / {
+  border: none;
+  color: rgb(255, 255, 255, 0.1);
+  height: 2px;
+}
+.block2 {
+  position: absolute;
+  height: 76px;
+  min-width: 880px;
+  margin: 250px 55px 0 250px;
+}
+ul {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  border: 1 solid #fbc02d;
+  background: #fbc02d;
+}
+ul li {
+  display: inline;
+  border: 1 solid #fbc02d;
+  background: #fbc02d;
+}
+
+i {
+  color: white;
+  opacity: 0.5;
+  padding: 10px;
+}
+i:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.roy {
+  position: absolute;
+  margin: 340px 145px 310px 80px;
+  font-family: ProximaNova;
+  font-size: 20px;
+  font-weight: normal;
+  color: #b4b4b4;
+  letter-spacing: 4.38px;
+}
+
+.like {
+  position: absolute;
+  margin: 390px 145px 310px 80px;
+  font-family: "Futura PT Light", serif;
+  font-size: 78px;
+  font-weight: 900;
+  color: #2a2a2a;
+  text-transform: uppercase;
+}
+
+.where {
+  position: absolute;
+  margin: 490px 145px 310px 80px;
+  font-family: Georgia;
+  font-size: 30px;
+  font-weight: normal;
+  color: #8f8f8f;
+}
+
+.text {
+  margin: 540px 145px 310px 80px;
+  position: absolute;
+  max-width: 810px;
+  font-size: 27px;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000000;
+  text-align: justify;
+}
+.text::after {
+  content: "Time to die.";
+  font-style: italic;
+}
+.text2 {
+  margin: 720px 145px 310px 80px;
+  position: absolute;
+  max-width: 810px;
+  font-size: 27px;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000000;
+  text-align: justify;
+}

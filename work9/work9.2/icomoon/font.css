@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Futura PT Book Oblique ";
+  src: url("FuturaPT-BookObl.eot");
+  src: url("FuturaPT-BookObl.eot?#iefix") format("embedded-opentype"),
+    url("FuturaPT-BookObl.woff") format("woff"),
+    url("FuturaPT-BookObl.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
