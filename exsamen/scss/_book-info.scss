@@ -1,0 +1,129 @@
+.book-info {
+    display: block;
+    height: 100%;
+}
+.select-place-one {
+    background-image: url(./assets/images/3.jpg);
+    @include background (700px);
+    width: 100%;
+    display:flex;
+
+    @include laptop {
+    margin-top: 189px;
+    min-height: 500px;
+    display:flex;  
+    }
+
+    @include desktop {
+    margin-top: 189px;
+    min-height: 700px;
+    display:flex;  
+    }
+
+    @include desktop {
+    margin-top: 270px;
+    min-height: 700px;
+    display:flex;  
+    }
+
+  &__title-country {
+    @include font-box-title;
+ }
+
+  &__title-hotel {
+    @include font-box-title;
+    text-transform: uppercase;
+    color: $color-box-bigtitle;
+    margin: 0;
+ }
+
+  &__distriction {
+    @include font-box-text;
+    margin: 0;
+    padding-top: 20px;
+}
+}
+
+.plase-row-one {
+    background-color: $background-color-box;
+    width: $widht-box;
+    height: $height-box;
+    padding: 5% 5%;
+    margin-top: 5%;
+
+    @include laptop {
+    width: 100%;
+    height: 70%;
+    margin: 18% auto;
+    padding: 30px 30px;
+    }
+
+    @include desktop {
+    width: 50%;
+    float:left;
+    background-color: $background-color-box;
+    width: 540px;
+    height: 371px;
+    margin-top: 225px;
+    padding: 30px 30px;
+    }
+}
+
+.select-place-two {
+    background-image: url(./assets/images/4.jpg);
+    @include background (700px);  
+    width: 100%;
+    display: flex;
+
+    @include laptop {
+    min-height: 500px;
+    display:flex;  
+    }
+
+    @include desktop {
+    min-height: 700px;
+    display:flex;  
+    }
+
+  &__title-country {
+    @include font-box-title;
+    }
+
+  &__title-hotel {
+    @include font-box-title;
+    text-transform: uppercase;
+    color: $color-box-bigtitle;
+    margin: 0;
+    }
+
+  &__distriction {
+    @include font-box-text;
+    margin: 0;
+    padding-top: 20px;
+    }
+}
+.plase-row-two {
+    background-color: $background-color-box;
+    width: $widht-box;
+    height: $height-box;
+    margin-top: 5%;
+    padding: 5% 5%;
+
+    @include laptop {
+    width: 100%;
+    height: 70%;
+    margin: 18% auto;
+    padding: 30px 30px;
+    }
+
+    @include desktop {
+    width: 50%;
+    float:right;
+    background-color: $background-color-box;
+    width: 540px;
+    height: 371px;
+    margin-top: 225px;
+    padding: 30px 30px;
+    margin-right: 0;
+    }
+}

@@ -1,0 +1,37 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "responsive";
+@import "button";
+@import "header";
+@import "choose-us";
+@import "book-info";
+@import "respont";
+@import "footer";
+
+body {
+   font-family: $fontJosefinsans;
+   color: $color-page;
+   margin: 0 auto;
+   box-sizing: border-box;
+}
+
+.wrapper {
+   max-width: 100vw;
+   width: 100%;
+
+}
+.conteiner {
+   width: 80.0%;
+   padding: 0 0.75%;
+   margin: 0 auto;
+   
+   @include laptop {
+   width: 90%;  
+   padding: 0 3.75%;  
+   }
+   @include desktop {
+   width: 92.5%;  
+   padding: 0 3.75%;  
+   }
+}

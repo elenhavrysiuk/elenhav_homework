@@ -1,0 +1,27 @@
+.button {
+    @include button;
+    background: $color-background-button;
+    color: $color-buttons;
+    font-size:$font-size-buttoms;
+    text-transform: $text-transform-buttoms;
+    width: 100%;
+    transition: all 0.3s ease-in;
+
+    @include laptop {
+    margin-top: 59px;  
+    width: 95%;     
+    }
+
+    @include laptop-pro {
+    margin-top: 195px;  
+    width: 95%;     
+    }
+    @include desktop {
+    margin-top: 40px;  
+    width: unset;  
+    }
+}
+
+.btn {
+    padding: 1.4em 4.22em 1.4em;
+}

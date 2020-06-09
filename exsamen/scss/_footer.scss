@@ -1,0 +1,46 @@
+.footer {
+    background: $color-background-footer;
+    @include flex (column, center, center);
+    min-height: 100%;
+    @include laptop {
+    min-height: 100%;
+    margin-top: -1%;
+    }
+    @include desktop {
+    min-height: 268px;
+    margin-top: unset;
+    }
+
+  &__logo {
+    text-align: center;
+    margin-top: 5%;
+
+    @include desktop {
+    margin-top: 100px;
+    }
+  }
+
+  &__logo--style {
+    @include font-title (24px, bold, uppercase, center); 
+    letter-spacing: 3.36px;
+  }
+
+  &__text {
+    @include font-title (16px, normal, capitalize, center); 
+    letter-spacing: 1.6px;
+  }
+}
+
+.social-bar-wrap {
+    padding: 1%;
+    text-align: center;
+
+.fab:hover {
+     color: rgb(84, 116, 253);
+     transition: all 0.3s ease-in;
+}
+.fab {
+    color: white;
+    padding: 0.6%;
+ }    
+}

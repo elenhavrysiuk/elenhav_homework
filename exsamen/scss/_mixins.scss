@@ -1,0 +1,77 @@
+@mixin flex($dir, $align, $justify) {
+    display: flex;
+    flex-direction: $dir;
+    align-items: $align;
+    justify-content: $justify;
+  }
+
+  // for input 
+@mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+  }
+
+  // for text
+@mixin font-title($size, $weight, $t-trans, $t-aling) {
+    font-size: $size;
+    font-weight: $weight;
+    text-transform: $t-trans;
+    text-align: $t-aling;
+  }
+ 
+@mixin font-box-text {
+    font-size: $font-size-box-text;
+    font-weight: normal;
+    line-height: 1.63;
+    color: $color-box;
+  }
+@mixin font-box-title {
+    font-size: $font-size-box-title;
+    font-weight: normal;
+    line-height: 1.3;
+  }  
+
+@mixin font-title-what-why-search {
+    font-family: $fontAleo;
+    font-size: $font-size-title;
+    font-weight: normal;
+    text-transform: capitalize;
+  }  
+
+// for button 
+@mixin rounded($border) {
+	  -webkit-border-radius: $border;
+	  -moz-border-radius: $border;
+	  border-radius: $border;
+}
+
+@mixin button {
+	  display: inline-block;
+	  padding: 1.3em 2.4em 1.3em;
+	  outline: none;
+	  text-align: center;
+    text-decoration: none;
+    @include rounded('.5em');
+    text-transform: $text-transform-buttoms;
+	//this determines Mozilla to show the padding
+	&:hover {
+		text-decoration: none;
+	}
+	&:active {
+		position: relative;
+		top: 1px;
+    }
+}
+
+     // for background
+
+@mixin background ($minheight) {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    max-height: $minheight;  
+}

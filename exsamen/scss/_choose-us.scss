@@ -1,0 +1,135 @@
+.choose-us {
+    @include flex(column, center, unset);
+    background-image: url(./assets/images/2.jpg);
+    @include background (685px);
+    height: 100%;
+    max-height: unset;
+
+    @include laptop {
+    @include flex(column, center, center);
+    max-height: 685px;
+    }
+
+   @include laptop-pro {
+   @include flex(column, center, center);
+   max-height: 700px;
+   }
+
+  &__info {
+    @include laptop {
+    width: 42%;
+    float: left;
+  }
+    @include desktop {
+    width: 42%;
+    float: left;
+    }
+  }
+
+  &__title{
+    margin-top: 15%;
+    @include font-title-what-why-search; 
+
+    @include laptop {
+    margin-top: 330px;
+    font-size: 36px;
+  }
+ 
+    @include desktop {
+    margin-top: 465px;
+    font-size: 36px;
+   }
+   }
+
+  &__text {
+    @include font-box-text;
+  }
+  &__foto {
+    margin-top: 15%;
+
+    @include laptop {
+    @include flex(column, center, center);
+    margin-top: 330px;
+    width: 58%; 
+    }
+
+    @include desktop {
+    @include flex(column, center, center);
+    margin-top: 390px;
+    width: 58%; 
+}
+}
+.foto-sea {
+   height: auto;
+   width: 100%;
+
+   @include desktop {
+   height: 100%;
+   width: auto; 
+   padding-left: 15%;
+  }
+}
+.foto-mountins {
+    padding-top: 15%;
+    height: auto;
+    width: 100%;
+
+    @include laptop {
+    padding-top: 5%; 
+    }
+
+    @include laptop-pro {
+    padding-bottom: 13%; 
+    }
+
+    @include desktop {
+    height: 100%;
+    width: auto; 
+    padding-left: 55%;
+    padding-top: 5px; 
+    padding-bottom: unset;
+    }
+}
+
+.instraction {
+    width: 100%;
+    background: #232323;
+    margin-top: 5%;
+
+    @include laptop {
+    margin-top: 80px;
+    max-height: 200px;
+    } 
+
+    @include laptop-pro {
+    margin-top: -51px;
+    max-height: 200px;
+    }
+    @include desktop {
+    margin-top: 120px;
+    max-height: 340px;
+  }
+ 
+  &__info {
+    text-align: center;
+    padding-top: 5%;
+
+    @include laptop {
+    float: left;
+    width: 33.33%;
+    padding-top: 50px;
+  }
+
+    @include desktop {
+    float: left;
+    width: 33.33%;
+    padding-top: 150px;
+  }
+}
+
+  &__title {
+    @include font-title-what-why-search; 
+  }
+}
+}
+
