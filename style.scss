@@ -1,0 +1,142 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+
+
+body {
+   font-family: $fontFamile;
+   margin: 0 auto;
+   box-sizing: border-box;
+   background-image: $background-All;
+   width: 1005px;
+   height: 860px;
+   color: $color-title-menu;
+   font-size: $font-size;
+}
+.wrap {
+   width: 600px;
+   height: 540px;
+   margin: 140px 150px;
+   box-shadow: 0 0 50px rgb(169, 169, 241);
+}
+.game_card {
+   background-color: #2b3040;
+   height: 115px;
+   padding-top: 32px;
+}
+
+.menu{
+   display: flex;
+   height: 80px;
+   width: 100%;
+   margin-top: 5px;
+   justify-content: space-around;
+
+   &__list{
+      display: inline-block;
+      font-size: 14px;
+      text-align: center;
+      text-transform: $text-transform-menu;
+      font-size: $font-size-menu;
+      cursor: pointer;
+   }
+   .disable {
+      opacity: 0.3;
+      border-left: 0;
+      border-top: 0;
+      border-right: 0;
+      border-bottom: 4px solid transparent;
+  }
+  .active {
+      border-left: 0;
+      border-top: 0;
+      border-right: 0;
+      border-bottom: 4px solid #fff;
+      opacity: 1;
+  }
+ 
+}
+
+.container {
+   padding: 40px 40px 40px 25px;
+   background-color: #212534;
+
+   &__img {
+      margin-left: 20px;
+   }
+   
+   &__information {
+     width: 60%;
+     float:right;
+     margin-top: -275px;
+     position: relative;
+     }
+
+   &__title--style {
+      font-size: 32px;
+      padding-top: 7px;
+      margin: 0;
+      font-weight: normal;
+   }
+   &__subtitle--style {
+      margin: 0;
+      font-weight: normal;
+   }
+   &__text {
+      padding-top: 40px;
+      line-height: 1.57;
+      color: #b7bacd;
+   }
+   &__price {
+      width: 60%;
+     float:right;
+     margin-top: -25px;
+   }
+   &__priceoff {
+      font-size: 12px;
+      color: #fedc3f;
+      line-height: 1.67;
+      text-transform: $text-transform-menu;
+   }
+   &__all-price {
+      font-size: $font-size-title;
+   }
+   &__btn {
+      position: absolute;
+      top: 547px;
+      right: 555px;
+      @include button;   
+   }
+}
+.star-rating {
+margin-left: 30px;
+margin-top: 25px;
+
+&__input{
+	display: none;
+}
+&__ico:hover:before,
+&__ico:hover ~ &__ico:before,
+&__input:checked ~ &__ico:before
+{
+   content: "\f005";
+   color: yellow;
+   padding: 5px;
+
+}
+}
+.coeiner__score{
+   position: absolute;
+   top: 0px;
+   right: 5px;
+}
+.rating, .wheretobuy {
+   color: #b7bacd;
+   line-height: 1.57;
+   padding: 40px 40px 40px 25px;
+   background-color: #212534;
+   display: none;
+}
+.tab {
+   height: 426px;
+}
