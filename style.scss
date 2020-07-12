@@ -1,0 +1,73 @@
+@import "reset";
+@import "variables";
+
+
+body {
+   font-family: $fontFamile;
+   margin: 100px auto;
+   box-sizing: border-box;
+   background-image: $background-All;
+   width: 1920px;
+   height: 100%;
+   color: $color-title-menu;
+   font-size: $font-size;
+   text-transform: $text-transform;
+  }
+
+.header {
+   text-align: center;
+   max-width: 1040px;
+   margin: 0 auto;
+   position: relative;
+   padding-top: 150px;
+
+   &__title {
+      font-size: $font-size-title;
+      margin: 0;
+   }
+   &__icon1 {
+      position: absolute;
+      top:160px;
+      right: 159px;
+   }
+   &__icon2 {
+      position: absolute;
+      top:410px;
+      left: -40px;
+   }
+}
+.slider {
+   width: 440px;
+   height: 400px;
+}
+
+.owl-nav {
+   display: block;
+}
+
+.carousel-nav-left, 
+.carousel-nav-right {
+position: absolute;
+top: 50%;
+transform: translate(0, -50%);
+cursor: pointer;
+display: flex;
+}   
+
+.carousel-nav-right {
+  right: 0;
+}
+
+.name {
+   position: reletive;
+   margin-top: -100px;
+   color: white;
+   font-size: 28px;
+   max-width: 300px;
+   margin-left: 20px;
+   line-height: 0.86;
+
+   &--stile {
+   font-size: 12px;
+   }
+}
