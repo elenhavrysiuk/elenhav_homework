@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Map</title>
+    </head>
+
+    <body>
+       
+        <div class="conteiner">
+         <h2>КАРТА</h2>
+         <div class="content">
+         <label for="address1">
+            Введіть адресу
+         </label>
+         <input class="content__start" type="text" name="address1" id="address1">
+         <label for="address2">
+            Введіть адресу
+         </label>
+         <input class="content__end" type="text" name="address2  " id="address2">
+         <input class="content__calc" type="submit" value="Розрахувати">
+        </div>
+        </div> 
+        <div id="map"></div>
+
+    <script src="script.js"></script>
+  
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOg3eXJ-bU-0S22rfmF7_TtajF0hiA4Yk&callback=initMap"
+    type="text/javascript"></script>
+</body>
+</html>
