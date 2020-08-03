@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Search Movie API</title>
+    <link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+<body>
+
+   
+   <div class="searchFormMovie">
+        <h1 class="titile">Search For a Movie</h1>
+   </div>
+          <div class="container">
+            <label class="searchLabel">Name Movie</label>
+            <input type="text" id="searchTitle" name="title" class="searchBox wight">
+          </div>
+          <div class="container">
+            <label class="searchLabel">Type</label>
+            <select id="type" name="typeOfSearch" class="typeOfSearch">
+              <option value="movie">Movie</option>
+              <option value="series">Series</option>
+              <option value="episode">Episode</option>
+            </select>
+            <button id="submit" type="submit" onclick="listMovies()">Search</button>
+          </div>
+
+    <div id="root" class="container"></div>
+
+    <div id="pagination" class="container pagination">Pages: </div>
+
+
+    <script src="./js/scripte.js"></script>
+</body>
+</html>

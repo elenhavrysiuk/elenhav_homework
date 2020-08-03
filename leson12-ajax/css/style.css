@@ -1,0 +1,80 @@
+
+html,
+body,
+div,
+h1,
+h2,
+ul,
+li,
+aside,
+footer,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+aside,
+footer,
+section {
+  display: block;
+}
+
+body {
+  background: #2f3640;
+  color: #ecf0f1;
+  padding: 50px 0 0;
+  font-family: "Varela Round", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  box-sizing: border-box;
+}
+
+.searchFormMovie {
+  width: 300px;
+  margin: 0 180px;
+}
+
+.titile {
+  font-size: 60px;
+  min-width: 800px;
+}
+
+.searchLabel {
+  font-size: 20px;
+}
+
+.typeOfSearch {
+  display: block;
+  margin-bottom: 30px;
+}
+
+#submit, .btn {
+ border: solid 2px #2c548b;
+ background-color: #2c4363;
+ cursor: pointer;
+ padding: 5px 15px;
+}
+
+.headline {
+    width: 900px;
+    margin: auto;
+}
+
+.movie-title {
+   padding: 10px 5px 5px -40px;
+}
+
+.poster {
+    float: right;
+}
