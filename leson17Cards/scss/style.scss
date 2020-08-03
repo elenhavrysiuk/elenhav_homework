@@ -1,0 +1,70 @@
+@import "reset";
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "responsive";
+@import "header";
+@import "sliders";
+@import "progects";
+@import "news";
+@import "gallery";
+@import "map";
+@import "footer";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(#a09426, #7f7b83);
+    min-height: 100vh;
+}
+.title {
+    color:#11091a;
+    font-size: 65px;
+    text-align: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(9, auto);
+    grid-gap: 10px;
+    margin: 50px;
+    justify-content: center;
+    perspective: 1000px;
+}
+.container:hover .card {
+    transform: rotateY(180deg);
+    }
+.card {
+    background-color: black;
+    height: 165px;
+    width: 125px;
+    border-radius: 6px;
+    position: relative;
+    transition: transform 4s;
+    transform-style: preserve-3d;
+
+    &__face {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        backface-visibility: hidden;
+      }
+}  
+.rybashka {
+    height: 165px;
+    width: 125px;  
+  }
+  .front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
+    .front {
+    z-index: 2;
+    }
+    .back {
+    transform: rotateY(180deg);
+    }

@@ -1,0 +1,43 @@
+@mixin position {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+@mixin posCenter {
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%)
+	
+}
+
+@mixin backGround {
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	 
+}
+@mixin btnGrad{
+	background: #496bfe; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #496bfe 42%, #496bfe 44%, #496bfe 45%, #496bfe 46%, #496bfe 46%, #496bfe 46%, #496bfe 46%, #496bfe 48%, #496bfe 51%, #496bfe 51%, #5474fd 54%, #5474fd 54%, #5474fd 57%, #5474fd 57%, #5474fd 61%, #5474fd 61%, #5474fd 62%, #5474fd 62%, #5474fd 62%, #5474fd 65%, #5474fd 71%, #5474fd 76%, #5474fd 79%, #5474fd 85%, #5474fd 94%, #5474fd 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, #496bfe 42%,#496bfe 44%,#496bfe 45%,#496bfe 46%,#496bfe 46%,#496bfe 46%,#496bfe 46%,#496bfe 48%,#496bfe 51%,#496bfe 51%,#5474fd 54%,#5474fd 54%,#5474fd 57%,#5474fd 57%,#5474fd 61%,#5474fd 61%,#5474fd 62%,#5474fd 62%,#5474fd 62%,#5474fd 65%,#5474fd 71%,#5474fd 76%,#5474fd 79%,#5474fd 85%,#5474fd 94%,#5474fd 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, #496bfe 42%,#496bfe 44%,#496bfe 45%,#496bfe 46%,#496bfe 46%,#496bfe 46%,#496bfe 46%,#496bfe 48%,#496bfe 51%,#496bfe 51%,#5474fd 54%,#5474fd 54%,#5474fd 57%,#5474fd 57%,#5474fd 61%,#5474fd 61%,#5474fd 62%,#5474fd 62%,#5474fd 62%,#5474fd 65%,#5474fd 71%,#5474fd 76%,#5474fd 79%,#5474fd 85%,#5474fd 94%,#5474fd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#496bfe', endColorstr='#5474fd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+// for hover and focus
+
+@mixin tr($prop) {
+	transition: $prop .4s ease-in;
+}
+
+@mixin hover() {
+	@include tr(all);
+	&:hover,
+	&:focus,
+	&:active,
+	&--active {
+		@content;
+	}
+}

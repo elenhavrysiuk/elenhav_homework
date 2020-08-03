@@ -1,0 +1,33 @@
+$mobile-width:480px;
+$tablet-width:767px;
+$desktop-width:1083px;
+
+@mixin mobile {
+  @media (max-width:$mobile-width-1px) {
+    @content;
+  }
+  }
+
+@mixin tablet {
+  @media (min-width:$mobile-width) {
+    @content;
+  }
+  }
+
+@mixin laptop {
+@media (min-width:$tablet-width) {
+  @content;
+}
+}
+
+@mixin laptop-pro {
+  @media (min-width:$tablet-width+257px) {
+    @content;
+  }
+  }
+
+@mixin desktop {
+  @media (min-width:$desktop-width) {
+    @content;
+  }
+  }
