@@ -1,0 +1,133 @@
+@import "reset";
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "responsive";
+@import "header";
+@import "sliders";
+@import "progects";
+@import "news";
+@import "gallery";
+@import "map";
+@import "footer";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(#a09426, #7f7b83);
+    min-height: 100vh;
+}
+
+.title {
+    color:#11091a;
+    font-size: 65px;
+    text-align: center;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(9, auto);
+    grid-gap: 10px;
+    margin: 50px;
+    justify-content: center;
+    perspective: 1000px;
+&:hover .card {
+    transform: rotateY(180deg);
+    }
+}
+
+.card {
+    height: 165px;
+    width: 125px;
+    border-radius: 6px;
+    position: relative;
+    transition: transform 4s;
+    transform-style: preserve-3d;
+    border: 1px solid black;
+    font-size: 25px;
+    z-index: 1;
+
+    &__face {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        backface-visibility: hidden;
+    }
+
+    &__face--down {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: 72%;
+    }
+
+    &__suit {
+        position: absolute;
+        left: 27%;
+        top: 15%;
+        font-size: 80px;
+        z-index: 5;
+    }
+}  
+
+  .front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    }
+
+    .back {
+    transform: rotateY(180deg);
+    padding: 5px;
+    }
+
+    .red {
+        color: red;
+       background-color: blanchedalmond;
+    }
+
+    .black {
+        color: black;
+        background-color: blanchedalmond;
+    }
+    
+    .rybashka {
+        height: 165px;
+        width: 125px;  
+      }
+
+    .jack {
+        background: url('./assets/images/sprite.png') 239% -405%;
+        width: 57px;
+        height: 70px;
+        border: 1px solid black;
+        margin-top: 40px;
+        margin-left: 34px;
+        background-color: blanchedalmond;
+        z-index: 5;
+    }
+
+    .queen {
+        background: url('./assets/images/sprite.png') 238% -493%;
+        width: 57px;
+        height: 70px;
+        border: 1px solid black;
+        margin-top: 40px;
+        margin-left: 34px;
+        background-color: blanchedalmond;
+        z-index: 5;
+    }
+    
+    .king {
+        background: url('./assets/images/sprite.png') 240% -450%;
+        width: 57px;
+        height: 70px;
+        border: 1px solid black;
+        position: absolute;
+        margin-top: 40px;
+        margin-left: 34px;
+        background-color: blanchedalmond;
+        z-index: 5;
+    }
