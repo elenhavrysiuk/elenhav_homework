@@ -1,0 +1,16 @@
+@import 'variables';
+
+body {
+    background-color: purple;
+    display: flex; 
+    background-image: url(/dist/image/asds.jpg);
+    background-position: center;
+    box-sizing: border-box;
+}
+h1 {
+    color: $color-white;
+    font-size: 50px;
+}
+img {
+   margin: 0 auto;
+}
